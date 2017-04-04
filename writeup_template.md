@@ -16,14 +16,14 @@ signs data set:
 
 
 
- exploratory visualization of the validation and test set is provided in the html page
+ exploratory visualization of the validation and test set is provided in the Traffic_Sign_Classifier.ipynb	file
 
 
 
 
-As a first step, I decided to convert the images to grayscale because training same images with different colours like the STOP traffic Sign board with Red border and one with green border should be treated the same instead of two different images this can increase your training time
+As a first step, I decided to convert the images to grayscale because training same images with different colours, like the STOP traffic Sign board with Red border and one with green border, should be treated as  the same instead of two different images ,this can increase your training time thus i have converted this images to gray scale so that it could be treated as the same and our training time could be reduced
 
- traffic sign images after  grayscaling is specified in the html page
+ traffic sign images after  grayscaling is specified in Traffic_Sign_Classifier.ipynb	file
 
 
 
@@ -37,13 +37,6 @@ For example, image 1 has pixel values [1, 2, 3, 4] and image 2 has pixel values 
 
 
 
-
-
-
-
-!
-
-The difference between the original data set and the augmented data set is the following ... 
 
 
 2. Model Architecture.
@@ -71,18 +64,18 @@ My final model consisted of the following layers:
 
 To train the model, I used an AdamOptimizer as i feel this was mentioned to be a better training algorithm than the Stochastic Gradient Descent (SGD). I wish to experiment with other optimizers as well but i couldnt do it due to lack of time .
 
-The batch size which i decided to choose was 200 as my GPU didn't run out of memory and my error optimization didn't take too long 
+The batch size which I decided to choose was 200 as my GPU didn't run out of memory and my error optimization didn't take too long 
 
-The number of epochs was chosen such that it is large enough to see the training and validation accuracies saturating ideal which was around 100 but i chose 200 as i did not allow image augmentation .which was the biggest draw back in my model the number of training sample provided is very low i could have augmented and added a 200,000 more replicas of the same data set which would have bought more efficiency in my model .
+The number of epochs was chosen such that it is large enough to see the training and validation accuracies saturating ideal which was around 100 but I chose 200 as I did not allow image augmentation ,which was the biggest draw back in my model .The number of training sample provided was very low ,I could have augmented and added a 200,000 more replicas of the same data set which would have bought more efficiency in my model .Due to lack of time i was not able to do it.
 
-I applied L2-Regularization after fully connected layer as it prevented overfitting of the data . i wanted to apply drop-out after my convolution layers and maxpooling as well as that would have improved my model but that was consuming too much time to train the model i had used the following reference to apply Regularization
+I applied L2-Regularization after fully connected layer as it prevented overfitting of the data . i wanted to apply drop-out after my convolution layers and maxpooling as well as that would have improved my model but that was consuming too much time to train the model I had used the following reference to apply Regularization
 https://arxiv.org/ftp/arxiv/papers/1512/1512.00242.pdf
 
 
 
 
 Number of epochs: 200
-Batch size: 270
+Batch size: 200
 Optimizer: Adam optimizer 
 Learning rate: 0.001
 Dropout keep-prob: 0.5(for training)
@@ -97,10 +90,10 @@ My final model results were:
 
  
 
-###Test a Model on New Images
+Test a Model on New Images
 
 
-Their are five German traffic signs that I found on the web:
+Their are Six German traffic signs that I found on the web:
 
 
 Few images might be difficult to classify because I have not done image augmentation as the training samples used are very less and these images might not be available in the training data 
