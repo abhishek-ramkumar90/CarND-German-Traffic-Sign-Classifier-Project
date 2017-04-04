@@ -6,3 +6,9 @@ checkpoint
 lenet.index
 
 lenet.meta
+
+*.zip
+
+*.p
+
+*.png
