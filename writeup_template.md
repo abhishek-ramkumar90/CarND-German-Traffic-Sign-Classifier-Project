@@ -46,7 +46,7 @@ For example, image 1 has pixel values [1, 2, 3, 4] and image 2 has pixel values 
 The difference between the original data set and the augmented data set is the following ... 
 
 
-####2. Model Architecture.
+2. Model Architecture.
 
 My final model consisted of the following layers:
 
@@ -73,7 +73,7 @@ To train the model, I used an AdamOptimizer as i feel this was mentioned to be a
 
 The batch size which i decided to choose was 200 as my GPU didn't run out of memory and my error optimization didn't take too long 
 
-The number of epochs was chosen such that it is large enough to see the training and validation accuracies saturating ideal which was around 100 but i chose 300 as i did not allow image augmentation .which was the biggest draw back in my model the number of training sample provided is very low i could have augmented and added a 200,000 more replicas of the same data set which would have bought more efficiency in my model .
+The number of epochs was chosen such that it is large enough to see the training and validation accuracies saturating ideal which was around 100 but i chose 200 as i did not allow image augmentation .which was the biggest draw back in my model the number of training sample provided is very low i could have augmented and added a 200,000 more replicas of the same data set which would have bought more efficiency in my model .
 
 I applied L2-Regularization after fully connected layer as it prevented overfitting of the data . i wanted to apply drop-out after my convolution layers and maxpooling as well as that would have improved my model but that was consuming too much time to train the model i had used the following reference to apply Regularization
 https://arxiv.org/ftp/arxiv/papers/1512/1512.00242.pdf
@@ -81,10 +81,10 @@ https://arxiv.org/ftp/arxiv/papers/1512/1512.00242.pdf
 
 
 
-Number of epochs: 300
-Batch size: 170
+Number of epochs: 200
+Batch size: 270
 Optimizer: Adam optimizer 
-Learning rate: 5e-3
+Learning rate: 0.001
 Dropout keep-prob: 0.5(for training)
 Dropout keep-prob: 1.0(for test)
 
