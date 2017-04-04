@@ -51,7 +51,7 @@ The difference between the original data set and the augmented data set is the f
 My final model consisted of the following layers:
 
 | Layer         		|     Description	        					              | 
-|:---------------:|:----------------------------:--------------| 
+|:---------------: |:----------------------------:--------------| 
 | Input         		| 32x32x1 GreyScale image   				            	| 
 | Convolution 5x5 | 1x1 stride, same padding, outputs 28x28x6 	|
 | RELU					       |												                                |
