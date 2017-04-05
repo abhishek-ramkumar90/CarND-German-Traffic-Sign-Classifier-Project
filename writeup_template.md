@@ -106,6 +106,7 @@ Here are the results of the prediction:
 | kintergarten.jpg      		| Go straight or right  									| 
 | road_work    			| road work 										|
 | Seinforen.jpg					| Priority road											|
+| slippery_road.jpg					|Slippery road										|
 | speed_limit_120      		| Speed limit (120km/h)				 				|
 | speed_limit_30		| Speed limit (70km/h)     							|
 | Stop		| Yield     							|
