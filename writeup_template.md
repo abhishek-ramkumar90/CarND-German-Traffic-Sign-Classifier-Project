@@ -84,13 +84,13 @@ Dropout keep-prob: 1.0(for test)
 
 My final model results were:
 
-* validation set accuracy of 0.960
-* test set accuracy of 0.941
+* validation set accuracy of 97.2%
+* test set accuracy of 95.3%
 
 
  
 
-Test a Model on New Images
+**Test a Model on New Images**
 
 
 Their are Six German traffic signs that I found on the web:
@@ -103,19 +103,19 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| kintergarten      		| Keep right   									| 
-| road_work    			| Double curve 										|
-| Seinforen					| Slippery road											|
+| kintergarten.jpg      		| Go straight or right  									| 
+| road_work    			| road work 										|
+| Seinforen.jpg					| Priority road											|
 | speed_limit_120      		| Speed limit (120km/h)				 				|
-| speed_limit_30		| Speed limit (30km/h)     							|
-| Stop		| Speed limit (60km/h)     							|
+| speed_limit_30		| Speed limit (70km/h)     							|
+| Stop		| Yield     							|
 
 
-The model was able to correctly guess 3 of the 6 traffic signs, which gives an accuracy of 50%. 
+The model was able to correctly guess 4 of the 6 traffic signs, which gives an accuracy of 66.7%. 
 
-The accuracy on the captured images is 50% while it was 94% on the testing set thus It seems the model is overfitting
+The accuracy on the captured images is 50% while it was 95% on the testing set thus It seems the model is overfitting
 
 
-I have also specified the top5 probabilities of the predictions 
+I have also specified the top5 probabilities of the predictions in my project.
 
 
