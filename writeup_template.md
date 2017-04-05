@@ -120,3 +120,7 @@ The accuracy on the captured images is 50% while it was 95% on the testing set t
 I have also specified the top5 probabilities of the predictions in my project.
 
 
+**Possible Improvements**
+I wish to apply image augmentation as the number of training samples are too low , if we have more images our model would have been more robust
+
+
