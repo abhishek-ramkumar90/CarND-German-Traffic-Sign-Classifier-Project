@@ -113,6 +113,8 @@ Here are the results of the prediction:
 
 The model was able to correctly guess 3 of the 6 traffic signs, which gives an accuracy of 50%. 
 
+The accuracy on the captured images is 50% while it was 94% on the testing set thus It seems the model is overfitting
+
 
 I have also specified the top5 probabilities of the predictions 
 
