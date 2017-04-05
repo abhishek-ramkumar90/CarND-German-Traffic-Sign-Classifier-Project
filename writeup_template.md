@@ -74,7 +74,7 @@ https://arxiv.org/ftp/arxiv/papers/1512/1512.00242.pdf
 
 
 
-Number of epochs: 200
+Number of epochs: 300
 Batch size: 200
 Optimizer: Adam optimizer 
 Learning rate: 0.001
